@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="item" onMouseClicked="#itemClickAction" prefHeight="232.0" prefWidth="221.0" styleClass="itemperusahaan" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="form.ItemController">
+    <stylesheets>
+        <URL value="@item.css" />
+    </stylesheets>
+   <children>
+      <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="126.0" prefWidth="215.0">
+               <children>
+                  <ImageView fx:id="img_perusahaan" fitHeight="141.0" fitWidth="215.0" nodeOrientation="INHERIT" pickOnBounds="true" styleClass="picture" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin></ImageView>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="47.0" prefWidth="215.0">
+               <children>
+                  <Label fx:id="label_namaperusahaan" alignment="CENTER" prefHeight="25.0" prefWidth="210.0" text="Nama Perusahaan">
+                     <font>
+                        <Font name="AGaramondPro-Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets left="5.0" top="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="124.0" prefHeight="47.0" prefWidth="215.0">
+               <children>
+                  <Label fx:id="label_kabupaten" alignment="CENTER" prefHeight="29.0" prefWidth="210.0" text="Kabupaten">
+                     <font>
+                        <Font name="AGaramondPro-Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets left="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox layoutX="15.0" layoutY="194.0" prefHeight="47.0" prefWidth="215.0">
+               <children>
+                  <Label fx:id="label_jenis" alignment="CENTER" prefHeight="29.0" prefWidth="210.0" text="Jenis">
+                     <font>
+                        <Font name="AGaramondPro-Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets left="5.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

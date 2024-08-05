@@ -1,0 +1,57 @@
+.left{
+    -fx-background-color: #11212d;
+}
+
+.logoutbtn{
+    -fx-background-color: transparent;
+    -fx-background-radius: 10;
+}
+
+.logoutbtn:hover{
+    -fx-background-color: #06141b;
+}
+
+.btnStatistik{
+    -fx-background-color: transparent;
+    -fx-background-radius: 10;
+}
+
+.btnStatistik:hover{
+    -fx-background-color: #06141b;
+}
+
+.btnClose{
+    -fx-background-color: transparent;
+    -fx-background-radius: 10;
+}
+
+.btnClose:hover{
+    -fx-background-color: #ff584d;
+}
+
+.main{
+    -fx-background-color: #ccd0cf;
+}
+
+.choosebutton{
+    -fx-background-color: #4a5c6a;
+    -fx-background-radius: 10;
+    -fx-text-fill: #ffffff;
+}
+
+.choosebutton:hover{
+    -fx-background-color: #11212d;
+    -fx-text-fill: #ffffff;
+}
+
+.scrool{
+    -fx-background-color: #ccd0cf;
+    -fx-border-color: black;
+    -fx-border-radius: 10;
+}
+
+.searchbar{
+    -fx-background-color: #4a5c6a;
+    -fx-background-radius: 10;
+    -fx-text-fill: #ffffff;
+}

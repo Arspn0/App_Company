@@ -1,0 +1,28 @@
+.main{
+    -fx-background-color: #9ba8ba;
+    -fx-border-color: black;
+}
+
+.closetbtn{
+    -fx-background-color: transparent;
+    -fx-background-radius: 10;
+}
+
+.closetbtn:hover{
+    -fx-background-color: #253745;
+    -fx-text-fill: #ffffff;
+}
+
+.btn{
+    -fx-background-color: #4a5c6a;
+    -fx-background-radius: 10;
+}
+
+.btn:hover{
+    -fx-background-color: #253745;
+}
+
+.field{
+    -fx-background-color: #ccd0cf;
+    -fx-background-radius: 10;
+}

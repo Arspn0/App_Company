@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="main_form" prefHeight="530.0" prefWidth="758.0" styleClass="main" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="form.InputAreaControllerUpdate">
+    <stylesheets>
+        <URL value="@inputarea.css" />
+    </stylesheets>
+   <children>
+      <HBox alignment="TOP_RIGHT" prefHeight="30.0" prefWidth="758.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="708.0">
+               <children>
+                  <Label text="Pilih Id:">
+                     <HBox.margin>
+                        <Insets left="25.0" right="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="AGaramondPro-Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="input_pilihId" prefHeight="25.0" prefWidth="172.0" promptText="Pilih Id" styleClass="field" stylesheets="@inputarea.css" />
+               </children>
+            </HBox>
+            <Button fx:id="btn_close" mnemonicParsing="false" onAction="#closeWindow" prefHeight="24.0" prefWidth="52.0" styleClass="closetbtn" stylesheets="@inputarea.css">
+               <graphic>
+                  <FontAwesomeIcon glyphName="CLOSE" />
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+      <HBox layoutY="33.0" prefHeight="497.0" prefWidth="758.0">
+         <children>
+            <VBox prefHeight="486.0" prefWidth="252.0">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" />
+               </HBox.margin>
+               <children>
+                  <ImageView fx:id="tampilan_gambar" fitHeight="155.0" fitWidth="239.0" pickOnBounds="true">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </ImageView>
+                  <Button fx:id="btn_pilihgambar" mnemonicParsing="false" onAction="#choosePicture" styleClass="btn" stylesheets="@inputarea.css" text="Pilih Gambar" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="AGaramondPro-Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Label prefHeight="30.0" prefWidth="118.0" text="No Telepon">
+                     <font>
+                        <Font name="AGaramondPro-Bold" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="input_notelepon" prefHeight="25.0" prefWidth="191.0" promptText="08xxxxxxxxxx" styleClass="field" stylesheets="@inputarea.css">
+                     <VBox.margin>
+                        <Insets right="15.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="AGaramondPro-Bold" size="12.0" />
+                     </font>
+                  </TextField>
+                  <Label prefHeight="30.0" prefWidth="118.0" text="Kode Pos">
+                     <font>
+                        <Font name="AGaramondPro-Bold" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="input_kodepos" prefHeight="25.0" prefWidth="191.0" promptText="Lima Digit Kode Pos" styleClass="field" stylesheets="@inputarea.css">
+                     <VBox.margin>
+                        <Insets right="15.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="AGaramondPro-Bold" size="12.0" />
+                     </font>
+                  </TextField>
+                  <Label prefHeight="30.0" prefWidth="118.0" text="No Gedung">
+                     <font>
+                        <Font name="AGaramondPro-Bold" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="input_nogedung" prefHeight="25.0" prefWidth="191.0" promptText="Cnth:08" styleClass="field" stylesheets="@inputarea.css">
+                     <VBox.margin>
+                        <Insets right="15.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="AGaramondPro-Bold" size="12.0" />
+                     </font>
+                  </TextField>
+                  <HBox alignment="CENTER" prefHeight="91.0" prefWidth="239.0" spacing="30.0">
+                     <children>
+                        <Button fx:id="btn_simpan" mnemonicParsing="false" onAction="#updateData" prefHeight="35.0" prefWidth="85.0" styleClass="btn" stylesheets="@inputarea.css" text="Update" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <font>
+                              <Font name="AGaramondPro-Bold" size="12.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="497.0" prefWidth="252.0">
+               <HBox.margin>
+                  <Insets bottom="10.0" right="10.0" />
+               </HBox.margin>
+               <children>
+                  <Label prefHeight="30.0" prefWidth="118.0" text="Nama Perusahaan">
+                     <font>
+                        <Font name="AGaramondPro-Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="input_namaperusahaan" prefHeight="25.0" prefWidth="191.0" promptText="PT.(Nama Perusahaan)" styleClass="field" stylesheets="@inputarea.css">
+                     <VBox.margin>
+                        <Insets right="15.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="AGaramondPro-Bold" size="12.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="10.0" layoutY="10.0" prefHeight="30.0" prefWidth="118.0" text="No Ijin">
+                     <font>
+                        <Font name="AGaramondPro-Bold" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="input_noijin" layoutX="10.0" layoutY="40.0" prefHeight="25.0" prefWidth="191.0" promptText="Cnth:123456789" styleClass="field" stylesheets="@inputarea.css">
+                     <VBox.margin>
+                        <Insets right="15.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="AGaramondPro-Bold" size="12.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="10.0" layoutY="65.0" prefHeight="30.0" prefWidth="118.0" text="Pemilik">
+                     <font>
+                        <Font name="AGaramondPro-Bold" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="input_pemilik" layoutX="10.0" layoutY="95.0" prefHeight="25.0" prefWidth="191.0" promptText="Nama Pemilik" styleClass="field" stylesheets="@inputarea.css">
+                     <VBox.margin>
+                        <Insets right="15.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="AGaramondPro-Bold" size="12.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="10.0" layoutY="120.0" prefHeight="30.0" prefWidth="118.0" text="Jenis Usaha">
+                     <font>
+                        <Font name="AGaramondPro-Bold" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <ComboBox fx:id="combo_jenisusaha" prefHeight="25.0" prefWidth="239.0" promptText="Pilih" styleClass="field" stylesheets="@inputarea.css">
+                     <VBox.margin>
+                        <Insets right="15.0" />
+                     </VBox.margin>
+                  </ComboBox>
+                  <Label layoutX="10.0" layoutY="175.0" prefHeight="30.0" prefWidth="118.0" text="Tanggal Berdiri">
+                     <font>
+                        <Font name="AGaramondPro-Bold" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <DatePicker fx:id="input_tanggalberdiri" prefHeight="25.0" prefWidth="224.0" promptText="Pilih Tnggal" styleClass="field" stylesheets="@inputarea.css" />
+                  <Label prefHeight="30.0" prefWidth="118.0" text="Rt">
+                     <font>
+                        <Font name="AGaramondPro-Bold" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="input_rt" prefHeight="25.0" prefWidth="191.0" promptText="Cnth:01" styleClass="field" stylesheets="@inputarea.css">
+                     <VBox.margin>
+                        <Insets right="15.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="AGaramondPro-Bold" size="12.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </VBox>
+            <VBox prefHeight="497.0" prefWidth="252.0">
+               <HBox.margin>
+                  <Insets bottom="10.0" right="10.0" />
+               </HBox.margin>
+               <children>
+                  <Label prefHeight="30.0" prefWidth="118.0" text="Provinsi">
+                     <font>
+                        <Font name="AGaramondPro-Bold" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="input_provinsi" prefHeight="25.0" prefWidth="191.0" promptText="Provinsi" styleClass="field" stylesheets="@inputarea.css">
+                     <VBox.margin>
+                        <Insets right="15.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="AGaramondPro-Bold" size="12.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="10.0" layoutY="10.0" prefHeight="30.0" prefWidth="118.0" text="Kabupaten">
+                     <font>
+                        <Font name="AGaramondPro-Bold" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="input_kabupaten" layoutX="10.0" layoutY="40.0" prefHeight="25.0" prefWidth="191.0" promptText="Kabupaten" styleClass="field" stylesheets="@inputarea.css">
+                     <VBox.margin>
+                        <Insets right="15.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="AGaramondPro-Bold" size="12.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="10.0" layoutY="65.0" prefHeight="30.0" prefWidth="118.0" text="Kecamatan">
+                     <font>
+                        <Font name="AGaramondPro-Bold" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="input_kecamatan" layoutX="10.0" layoutY="95.0" prefHeight="25.0" prefWidth="191.0" promptText="Kecamatan" styleClass="field" stylesheets="@inputarea.css">
+                     <VBox.margin>
+                        <Insets right="15.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="AGaramondPro-Bold" size="12.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="10.0" layoutY="120.0" prefHeight="30.0" prefWidth="118.0" text="Desa">
+                     <font>
+                        <Font name="AGaramondPro-Bold" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="input_desa" layoutX="10.0" layoutY="150.0" prefHeight="25.0" prefWidth="191.0" promptText="Desa" styleClass="field" stylesheets="@inputarea.css">
+                     <VBox.margin>
+                        <Insets right="15.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="AGaramondPro-Bold" size="12.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="10.0" layoutY="175.0" prefHeight="30.0" prefWidth="118.0" text="Nama Jalan">
+                     <font>
+                        <Font name="AGaramondPro-Bold" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="input_namajalan" layoutX="10.0" layoutY="205.0" prefHeight="25.0" prefWidth="191.0" promptText="Nama Jalan" styleClass="field" stylesheets="@inputarea.css">
+                     <VBox.margin>
+                        <Insets right="15.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="AGaramondPro-Bold" size="12.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="10.0" layoutY="285.0" prefHeight="30.0" prefWidth="118.0" text="Rw">
+                     <font>
+                        <Font name="AGaramondPro-Bold" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="input_rw" layoutX="10.0" layoutY="315.0" prefHeight="25.0" prefWidth="191.0" promptText="Cnth:12" styleClass="field" stylesheets="@inputarea.css">
+                     <VBox.margin>
+                        <Insets right="15.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="AGaramondPro-Bold" size="12.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

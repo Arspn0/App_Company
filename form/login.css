@@ -1,0 +1,51 @@
+.left{
+    -fx-background-color: #4a5c6a;
+}
+
+.right{
+    -fx-background-color: #ccd0cf;
+}
+
+.btnLogin{
+    -fx-background-color: #ccd0cf;
+    -fx-background-radius: 10;
+}
+
+.btnLogin:hover{
+    -fx-background-color: #253745;
+    -fx-text-fill: #ffffff;
+}
+
+.btnMinimize{
+    -fx-background-color: transparent;
+}
+
+.btnMinimize:hover{
+    -fx-background-color: #4a5c6a;
+    -fx-background-color: #9ba8ba;
+}
+
+.btnClose{
+    -fx-background-color: transparent;
+}
+
+.btnClose:hover{
+    -fx-background-color: #4a5c6a;
+    -fx-background-color: #ff584d;
+}
+
+.textfield{
+    -fx-background-color: transparent;
+    -fx-border-color: #ffffff;
+    -fx-border-radius: 10;
+    -fx-text-fill: #ffffff;
+}
+
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('asset/Poppins-Regular.ttf');
+}
+
+.serialConn {
+    -fx-font-family: 'Poppins-Regular';
+}
